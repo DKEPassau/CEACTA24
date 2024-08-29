@@ -18,7 +18,71 @@ To use the Jupyter Notebook, you'll need to install the necessary Python package
    ```bash
    git clone https://github.com/DKEPassau/CEACTA24.git
 
-1. **Navigate to the project directory:**
+2. **Navigate to the project directory:**
 
    ```bash
-   git clone https://github.com/DKEPassau/CEACTA24.git     
+   cd your-repository
+   
+3. **Create a virtual environment (recommended but optional):**
+
+   ```bash
+   python -m venv venv
+
+4. **Activate the virtual environment Windows:**
+
+   ```bash
+   venv\Scripts\activate
+
+5. **Activate the virtual environment MAC and Linux:**
+
+   ```bash
+   source venv/bin/activate
+   
+6. **Install the required packages:**
+
+   ```bash
+   pip install -r requirements.txt
+
+7. **Launch the Jupyter notebook:**
+
+   ```bash
+   jupyter notebook
+ 
+
+ ## Usage
+
+1. **Open the Notebook:**
+Start Jupyter Notebook and open `CEA_R2_BIODIV_TARGET.ipynb` and others.
+2. **Follow the Instructions:**
+The notebook contains step-by-step instructions and code for performing CEA and CTA. Follow the guide in the notebook to run the analysis.
+3. **Datasets:**
+Ensure that you have access to the BIODIV and BIOMEDICAL datasets. Update the file paths in the notebook to point to the locations of your datasets.
+
+## Requirements
+
+The notebook relies on the following Python packages:
+
+- `pandas`
+- `requests`
+- `ratelimit`
+- `concurrent.futures`
+- `json`
+- `re`
+- `collections`
+- `OrderedDict`
+
+All required packages are listed in `requirements.txt`.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
